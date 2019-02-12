@@ -1,4 +1,2 @@
 # bootimages
-Mellanox BlueField boot images
-
-These files are normally found in /lib/firmware/mellanox/boot.
+Mellanox BlueField boot images BlueField-2.0.1.10841
