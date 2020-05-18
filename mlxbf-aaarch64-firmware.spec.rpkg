@@ -1,0 +1,33 @@
+Name: mlxbf-aarch64-firmware
+Version: 2.5.1.11213
+Release: 1%{?dist}
+Summary: Boot images (ATF, UEFI, etc) for Mellanox BlueField
+
+License: BSD
+Url: https://github.com/Mellanox/bootimages
+Source: {{{ git_dir_pack }}}
+
+ExclusiveArch: aarch64
+
+%description
+Binary files for ATF, UEFI, etc for Mellanox BlueField hardware.
+These files are required for booting BlueField chips, and are installed
+by using bfrec, included in the mlxbf-bfscripts package.
+
+%prep
+{{{ git_dir_setup_macro }}}
+
+%install
+%global installdir %{buildroot}/lib/firmware/mellanox/boot
+mkdir -p %{installdir}
+install -m 644 default.bfb %{installdir}
+install -m 644 default.bfb.md5sum %{installdir}
+install -m 644 FirmwareUpdate.efi %{installdir}
+
+%files
+%defattr(644, root, root)
+/lib/firmware/mellanox/boot/*
+
+%changelog
+{{{ git_dir_changelog }}}
+
