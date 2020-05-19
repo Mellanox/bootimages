@@ -5,7 +5,7 @@ Summary: Boot images (ATF, UEFI, etc) for Mellanox BlueField
 
 License: BSD
 Url: https://github.com/Mellanox/bootimages
-Source: {{{ git_dir_pack dir_name=bffw source_name=mlxbf-aarch64-firmware.tar.xz }}}
+Source: {{{ git_dir_pack dir_name=bffw source_name=mlxbf-aarch64-firmware.tar.gz }}}
 
 ExclusiveArch: aarch64
 
