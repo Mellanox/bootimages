@@ -1,5 +1,5 @@
 Name: mlxbf-aarch64-firmware
-Version: 3.0.alpha3.11263
+Version: 3.0.alpha4.11269
 Release: 1%{?dist}
 Summary: Boot images (ATF, UEFI, etc) for Mellanox BlueField
 
