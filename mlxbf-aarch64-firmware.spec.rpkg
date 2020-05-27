@@ -1,6 +1,6 @@
 Name: mlxbf-aarch64-firmware
 Version: 3.0.alpha4.11269
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Boot images (ATF, UEFI, etc) for Mellanox BlueField
 
 License: BSD and ASL 2.0
@@ -17,6 +17,9 @@ by using bfrec, included in the mlxbf-bfscripts package.
 %prep
 {{{ git_dir_setup_macro dir_name=bffw }}}
 
+%build
+exit 0
+
 %install
 %global installdir %{buildroot}/lib/firmware/mellanox/boot
 mkdir -p %{installdir}
@@ -27,6 +30,8 @@ install -m 644 FirmwareUpdate.efi %{installdir}
 %files
 %defattr(644, root, root)
 /lib/firmware/mellanox/boot/*
+%doc README.md
+%license LICENSE licenses/*
 
 %changelog
 {{{ git_dir_changelog }}}
