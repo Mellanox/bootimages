@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Name: mlxbf-aarch64-firmware
 Version: 3.0.alpha3.11263
 Release: 1%{?dist}
@@ -34,5 +36,3 @@ install -m 644 FirmwareUpdate.efi %{installdir}
 %license LICENSE licenses/*
 
 %changelog
-{{{ git_dir_changelog }}}
-
