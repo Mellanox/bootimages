@@ -36,7 +36,7 @@ install -m 644 FirmwareUpdate.efi %{installdir}
 %license LICENSE licenses/*
 
 %changelog
-* Thu Jun 10 2020 Spencer Lingard <spencer@nvidia.com> - 3.0.beta1.11348-1
+* Thu Jul 30 2020 Spencer Lingard <spencer@nvidia.com> - 3.0.beta1.11348-1
 Update to 3.0.beta1.11348
 
 * Wed Jun 10 2020 Spencer Lingard <spencer@nvidia.com> - 3.0.beta1-2
