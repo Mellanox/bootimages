@@ -37,6 +37,12 @@ install -m 644 FirmwareUpdate.efi %{installdir}
 %license LICENSE licenses/*
 
 %changelog
+* Fri Jul 31 2020 Spencer Lingard <spencer@nvidia.com> - 3.0.0.11348~beta1-1
+- Update version stamp
+- Use just %setup
+- Add version data to source tarball name
+- Add Provides: mlxbf-bootimages for compatability with old package name
+
 * Thu Jul 30 2020 Spencer Lingard <spencer@nvidia.com> - 3.0.beta1.11348-1
 Update to 3.0.beta1.11348
 
