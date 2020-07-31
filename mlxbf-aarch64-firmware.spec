@@ -10,6 +10,7 @@ Url: https://github.com/Mellanox/bootimages
 Source: mlxbf-aarch64-firmware-3.0.0.11348~beta1.tar.gz
 
 ExclusiveArch: aarch64
+Provides: mlxbf-bootimages = %{version}
 
 %description
 Binary files for ATF, UEFI, etc for Mellanox BlueField hardware.
