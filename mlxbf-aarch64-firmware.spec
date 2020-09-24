@@ -7,7 +7,7 @@ Summary: Boot images (ATF, UEFI, etc) for Mellanox BlueField
 
 License: BSD and ASL 2.0
 Url: https://github.com/Mellanox/bootimages
-Source: mlxbf-aarch64-firmware-3.0.0.11263~alpha3.tar.gz
+Source: %{name}-%{version}.tar.gz
 
 ExclusiveArch: aarch64
 Provides: mlxbf-bootimages = %{version}
@@ -24,11 +24,7 @@ by using bfrec, included in the mlxbf-bfscripts package.
 exit 0
 
 %install
-%global installdir %{buildroot}/lib/firmware/mellanox/boot
-mkdir -p %{installdir}
-install -m 644 default.bfb %{installdir}
-install -m 644 default.bfb.md5sum %{installdir}
-install -m 644 FirmwareUpdate.efi %{installdir}
+%{__make} install DESTDIR=%{buildroot}
 
 %files
 %defattr(644, root, root)
