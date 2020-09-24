@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: mlxbf-aarch64-firmware
-Version: 3.0.0.11348~beta1
+Version: 3.1.0.11424
 Release: 1%{?dist}
 Summary: Boot images (ATF, UEFI, etc) for Mellanox BlueField
 
@@ -33,6 +33,12 @@ exit 0
 %license LICENSE licenses/*
 
 %changelog
+* Thu Sep 24 2020 Spencer Lingard <spencer@nvidia.com> - 3.1.0.11424-1
+- Update to 3.1.0.11424
+- Generate tarball name
+- Upgrade SRPM makefile
+- Move install logic to makefile
+
 * Fri Jul 31 2020 Spencer Lingard <spencer@nvidia.com> - 3.0.0.11348~beta1-1
 - Update version stamp
 - Use just %setup
