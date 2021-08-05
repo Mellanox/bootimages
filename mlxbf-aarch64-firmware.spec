@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: mlxbf-aarch64-firmware
-Version: 3.6.0.11699
+Version: 3.7.0.11805
 Release: 1%{?dist}
 Summary: Boot images (ATF, UEFI, etc) for Mellanox BlueField
 
@@ -33,6 +33,9 @@ exit 0
 %license LICENSE licenses/*
 
 %changelog
+* Thu Aug 5 2021 Spencer Lingard <spencer@nvidia.com> - 3.7.0.11805-1
+- Update to 3.7.0.11805
+
 * Thu May 20 2021 Spencer Lingard <spencer@nvidia.com> - 3.6.0.11699-1
 - Update to 3.6.0.11699
 
