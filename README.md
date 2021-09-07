@@ -1,3 +1,7 @@
+# IMPORTANT NOTE
+This is an testing release of redfish-enabled UEFI firmware. Do not use on
+production systems.
+
 # bootimages
 Mellanox BlueField boot images, which are required for booting BlueField
 devices. These files are normally found in /lib/firmware/mellanox/boot.

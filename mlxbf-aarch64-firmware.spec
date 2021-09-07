@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: mlxbf-aarch64-firmware
-Version: 3.7.0.11805
+Version: 99.99.99.99999
 Release: 1%{?dist}
 Summary: Boot images (ATF, UEFI, etc) for Mellanox BlueField
 
