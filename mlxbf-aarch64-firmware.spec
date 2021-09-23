@@ -2,7 +2,7 @@
 
 Name: mlxbf-aarch64-firmware
 Version: 3.7.1.11866
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Boot images (ATF, UEFI, etc) for Mellanox BlueField
 
 License: BSD and ASL 2.0
@@ -33,6 +33,9 @@ exit 0
 %license LICENSE licenses/*
 
 %changelog
+* Thu Sep 23 2021 Spencer Lingard <spencer@nvidia.com> - 3.7.1.11866-2
+- Update signature on 3.7.1 images
+
 * Thu Sep 23 2021 Spencer Lingard <spencer@nvidia.com> - 3.7.1.11866-1
 - Update to 3.7.1.11866
 
